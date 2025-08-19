@@ -1,0 +1,1 @@
+Spiegazione dei puntatori, concetto chiave per la gestione avanzata della memoria in C.
