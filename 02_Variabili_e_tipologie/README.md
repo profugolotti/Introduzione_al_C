@@ -58,7 +58,7 @@ int main() {
     Esempio:
 
     'C' | 'i' | 'a' | 'o' | ' ' | 'M' | 'o' | 'n' | 'd' | 'o' | '\0'
-    ↑
+     ↑
     msg
 
     - msg non contiene direttamente "Ciao Mondo".
