@@ -1,10 +1,10 @@
-#include <stdio.h>   // Libreria Standard Input/Output: printf, scanf
+#include <stdio.h>   // Libreria Standard Input/Output: mette a disposizione printf, scanf
 #include <limits.h>  // Per i range (CHAR_MIN, INT_MAX, ecc.)
 #include <float.h>   // Per i limiti di float e double
 
 int main() {
     // Sezione Dichiarativa
-    char c = 'A';               // 1 byte, carattere ASCII (65)
+    char c = 'A';               // 1 byte, carattere ASCII (codice numerico 65)
     int n  = 100;               // 4 byte, intero con segno
     float peso = 72.5;          // 4 byte, virgola mobile (circa 6-7 cifre decimali di precisione)
     float pi_greco = 3.14f;     // la f indica che è un float
@@ -16,7 +16,7 @@ int main() {
     printf("Carattere c = %c (codice ASCII: %d)\n", c, c);
     printf("Numero intero n = %d\n", n);
     printf("Peso = %.2f\n", peso);
-    printf("Pi greco (float) = %.2f\n", pi_greco);
+    printf("Pi greco (float) = %.2f\n", pi_greco);  
     printf("Pi greco (double) = %.15f\n", pi_greco_bello);
     printf("Messaggio = %s\n\n", msg);
 
