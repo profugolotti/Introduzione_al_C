@@ -12,7 +12,8 @@ int main() {
     float peso = 72.5; // numero in virgola mobile (4 byte)
     double pi = 3.141592653589793; // double precision (8 byte)
 
-    char* msg = "Ciao Mondo"; // puntatore a stringa: attento NON è un char (una stringa di più caratteri non può essere contenuta in 1 byte). Un pantatore è una variabile che contine solo il riferimento alla stringa: "punta" il primo carattere della stringa.
+    char* msg = "Ciao Mondo"; // puntatore a stringa: 
+    // !!! attento NON è un char (una stringa di più caratteri non può essere contenuta in 1 byte)
 
     // Uso delle variabili
     printf("n = %d, c = %c, peso = %.2f, pi = %.15f\n", n, c, peso, pi);
@@ -50,7 +51,19 @@ int main() {
   ```c
   char* msg = "Ciao Mondo";
   ```
+  Attento!!!
+    - Un char è un singolo carattere, ad esempio 'A'.
+    - Una stringa come "Ciao Mondo" è in realtà un array di caratteri terminato dal carattere speciale '\0'.
 
+    Esempio:
+
+    'C' | 'i' | 'a' | 'o' | ' ' | 'M' | 'o' | 'n' | 'd' | 'o' | '\0'
+    ↑
+    msg
+
+    - msg non contiene direttamente "Ciao Mondo".
+
+    - msg è un puntatore (una variabile che occupa 4 o 8 byte, a seconda della macchina) che contiene l’indirizzo di memoria del primo carattere ('C').
 ---
 
 ## Funzioni utili
