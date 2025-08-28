@@ -53,7 +53,7 @@ int main() {
   ```
   Attento!!!
     - Un char è un singolo carattere, ad esempio 'A'.
-    - Una stringa come "Ciao Mondo" è in realtà un array di caratteri terminato dal carattere speciale '\0'.
+    - Quindi una stringa come "Ciao Mondo" non può essere contenuta in una variabile di tipo CHAR: puoi pensare ad una stringa come ad un trenino di lettere (detto array), dove ogni lettera è un vagone.
 
     Esempio:
 
@@ -61,9 +61,8 @@ int main() {
      ↑
     msg
 
-    - msg non contiene direttamente "Ciao Mondo".
-
     - msg è un puntatore (una variabile che occupa 4 o 8 byte, a seconda della macchina) che contiene l’indirizzo di memoria del primo carattere ('C').
+    - Quando scrivi `printf("%s", msg);`, la funzione `printf` segue quell’indirizzo e legge caratteri finché non incontra '\0' (terminatore di stringa).
 ---
 
 ## Funzioni utili
