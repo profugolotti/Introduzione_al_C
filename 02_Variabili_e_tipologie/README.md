@@ -57,9 +57,11 @@ int main() {
 
     Esempio:
 
+    ```
     'C' | 'i' | 'a' | 'o' | ' ' | 'M' | 'o' | 'n' | 'd' | 'o' | '\0'
-     ↑
+    ↑
     msg
+    ```
 
     - Ogni casella rappresenta un **char** (1 byte).
     - `msg` è un puntatore (una variabile che occupa 4 o 8 byte, a seconda della macchina) che contiene l’indirizzo di memoria del primo carattere ('C').
