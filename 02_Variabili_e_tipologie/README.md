@@ -77,16 +77,10 @@ int main() {
 ---
 
 ## Esercizi consigliati
-1. Dichiara una variabile `int`, assegnale un valore e stampala con `printf`.
-2. Crea una variabile `float` e stampala con due cifre decimali.
-3. Dichiarare una variabile `char` e stampare sia il carattere che il suo codice ASCII.
-4. Dichiarare una variabile `double` contenente il valore di π con molte cifre decimali e confrontarlo con un `float`.
-5. Usare `sizeof()` per stampare la dimensione in byte di `int`, `float`, `double` e `char`.
+1. Dichiara una variabile `int` senza assegnarla e stampala con `printf`, lancia il programma più volte: cosa stampa?
+2. Crea una variabile `short`, inizializzala e stampala, cerca nella libreria limits.h e stampa il suo range.
+3. Dichiarare una variabile `char` e usala per stampare qulache riga del codice ASCII, stampando sia il carattere che il suo codice ASCII.
+4. Dichiarare sia una variabile `double` sia una `float` e inizializzale con il valore di π con molte cifre decimali ([qui](https://www.dmf.unicatt.it/musesti/divulg/itis2007/pi.html)), stampale entrambe con l'opportuna specifica di conversione e confrontale.
+5. Usare `sizeof()` per stampare una tabella con le dimensioni dei tipi studiati ( `int`, `float`, `double`, `char`, ecc).
 
 ---
-
-## Output di esempio
-```
-n = 100, c = A, peso = 72.50, pi = 3.141592653589793
-Messaggio: Ciao Mondo
-```
