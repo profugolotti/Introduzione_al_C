@@ -50,11 +50,14 @@ int main ()
   - Richiede l’indirizzo della variabile (`&`), tranne che per le stringhe (`char[]`).  
   - È possibile limitare il numero di caratteri letti con `%Ns` (nell’esempio `%79s`).  
 
-- **Costanti** → si dichiarano con `const`, e non possono essere modificate.  
-  ```c
-  const unsigned NOW = 2025;
-  ```
-- **Modificatori** → le variabili intere possono essere `unsigned`, e possono memorizzare solo numeri non negativi (≥ 0)
+- **Modificatori** → è possibile cambiare il modo in cui funzionano le variabili
+
+  - **Costanti** → si dichiarano con `const`, e non possono essere modificate (*immutabili*) dopo l'inizializzazione.  
+    ```c
+    const unsigned NOW = 2025;
+    ```
+    - Attenzione! Le costanti devono sempre essere inizializzate.
+- **`unsigned`** → le variabili intere (`int`, `short`, `long` e `long long`) possono memorizzare solo numeri non negativi (≥ 0)
   ```c
   const unsigned NOW = 2025;
   ```
