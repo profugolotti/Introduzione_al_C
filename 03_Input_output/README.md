@@ -57,20 +57,20 @@ int main ()
     const unsigned NOW = 2025;
     ```
     - Attenzione! Le costanti devono sempre essere inizializzate.
-- **`unsigned`** → le variabili intere (`int`, `short`, `long` e `long long`) possono memorizzare solo numeri non negativi (≥ 0)
-  ```c
-  const unsigned NOW = 2025;
-  ```
-  - raddoppia approssimativamente il massimo valore positivo memorizzabile rispetto al tipo con segno. 
-  - Esempi di intervalli su macchine a 32/64 bit:
-    ```markdown
-    int (signed 32-bit):
-    Min: -2.147.483.648                   0                   Max: 2.147.483.647
-    |------------------------------------|----------------------------------|
+  - **`unsigned`** → le variabili intere (`int`, `short`, `long` e `long long`) possono memorizzare solo numeri non negativi (≥ 0)
+    ```c
+    const unsigned NOW = 2025;
+    ```
+    - raddoppia approssimativamente il massimo valore positivo memorizzabile rispetto al tipo con segno. 
+    - Esempi di intervalli su macchine a 32/64 bit:
+        ```markdown
+        int (signed 32-bit):
+        Min: -2.147.483.648                   0                   Max: 2.147.483.647
+        |------------------------------------|----------------------------------|
 
-    unsigned int (32-bit):
-    Min: 0                                                            Max: 4.294.967.295
-    |-----------------------------------------------------------------------|
+        unsigned int (32-bit):
+        Min: 0                                                            Max: 4.294.967.295
+        |-----------------------------------------------------------------------|
     ```
 ---
 
