@@ -85,4 +85,5 @@ int main ()
 4. Fai leggere un carattere all’utente (`char sesso = 'M'/'F'`) e stampalo in una frase, ad esempio:  
    *"Hai selezionato il sesso: M."*  
 
-5. Scrivi un programma che chieda altezza e peso e calcoli l’**indice di massa corporea (BMI)**, stampando anche un commento sul risultato (es. sotto peso, normopeso, sovrappeso).  
+5. Scrivi un programma che chieda all’utente: nome e numero di lettere digitate in 10 secondi. Il programma deve stampare un messaggio di saluto con il nome dell’utente e l’indice di digitazione:
+  indice = lettere digitate / 10
