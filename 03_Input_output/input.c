@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <stdio.h> //printf, scanf
+
 
 int main() {
     int eta;
@@ -7,6 +8,8 @@ int main() {
 
     const int ANNO_CORRENTE = 2025;   // costante simbolica
     const float ALTEZZA_MEDIA = 1.70; // valore di riferimento
+                
+    //Il modificatore "const" avvisa il compilatore che la 'variabile' non può essere modificata
 
     // Input da tastiera
     printf("Inserisci il tuo nome: ");
