@@ -51,7 +51,7 @@ int main ()
 
 - **Modificatori** → è possibile cambiare il modo in cui funzionano le variabili
 
-  - **Costanti** → si dichiarano con `const`, e non possono essere modificate (*immutabili*) dopo l'inizializzazione.  
+  - **`const`** → le variabilli diventano COSTANTI e non possono essere modificate (*immutabili*) dopo l'inizializzazione.  
     ```c
     const unsigned NOW = 2025;
     ```
