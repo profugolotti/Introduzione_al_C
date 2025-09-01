@@ -1,5 +1,4 @@
-# 04_Input_output
-# Input e Output in C
+# 03 Input e Output in C
 
 ## Struttura di base con `scanf` e `printf`
 ```c
