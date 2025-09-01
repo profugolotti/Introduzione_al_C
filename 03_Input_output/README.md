@@ -53,14 +53,15 @@ int main ()
 
   - **`const`** → le variabilli diventano COSTANTI e non possono essere modificate (*immutabili*) dopo l'inizializzazione.  
     ```c
-    const unsigned NOW = 2025;
+    const int NOW = 2025;
     ```
     - Attenzione! Le costanti devono sempre essere inizializzate.
   - **`unsigned`** → le variabili intere (`int`, `short`, `long` e `long long`) possono memorizzare solo numeri non negativi (≥ 0)
     ```c
-    const unsigned NOW = 2025;
+    unsigned NOW = 2025;
     ```
-    - raddoppia approssimativamente il massimo valore positivo memorizzabile rispetto al tipo con segno. 
+    - raddoppia approssimativamente il massimo valore positivo memorizzabile rispetto al tipo con segno.
+    - `unsigned` da solo equivale a `unsigned int`.
     - Esempi di intervalli su macchine a 32/64 bit:
         ```markdown
         int (signed 32-bit):
