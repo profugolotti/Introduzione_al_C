@@ -9,7 +9,7 @@ Esempio di scambio di valori tra due variabili
 int main() {
 
     int a = 3;
-    int b = 7;à
+    int b = 7;
 
     //leggi le variabili da tastiera
 
