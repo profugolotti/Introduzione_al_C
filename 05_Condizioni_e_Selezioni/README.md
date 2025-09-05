@@ -144,7 +144,6 @@ Scrivi un programma che legga un numero intero e dica se è multiplo di 2, 3, 4,
 **Esempi di esecuzione**
 
 ```markdown
-```shell
 Inserisci un numero: 14
 14 è multiplo di 2
 14 è multiplo di 7
@@ -212,8 +211,8 @@ Scrivi un programma che calcoli il prezzo del biglietto per un visitatore del Lu
 
 **Esempio di esecuzione:**
 
-```markdown
-```shell
+
+```bash
 	Quanti anni hai? 7
 	Scegli un'attività (g=giostra, c = casa stregata, t=torre panoramica): g
 	Hai diritto a uno sconto del 50%.
