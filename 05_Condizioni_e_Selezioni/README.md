@@ -134,21 +134,37 @@ Scrivi un programma che chieda un numero all'utente e:
 - altrimenti stampi "dispari".
 
 ### 🔹 2. Condizione doppia
-Scrivi un programma che chieda la temperatura esterna (intero).\
-- Se è maggiore o uguale a 30 stampa "Fa caldo".\
+Scrivi un programma che chieda la temperatura esterna (intero).
+- Se è maggiore o uguale a 30 stampa "Fa caldo".
 - Altrimenti stampa "Non fa caldo".
+
+### 🔹 3.  Verifica di molteplicità
+Scrivi un programma che legga un numero intero e dica se è multiplo di 2, 3, 4, 5, 6 o 7.
+
+Esempi di esecuzione
+``` c
+Inserisci un numero: 14
+14 è multiplo di 2
+14 è multiplo di 7
+
+Inserisci un numero: 25
+25 è multiplo di 5
+
+Inserisci un numero: 11
+11 non è multiplo di nessuno tra 2 e 7
+```
 
 ### 🔹 3. Operatore logico `&&`
 Scrivi un programma che chieda l'età e se lo studente ha la tessera
-dello studente (`s`/`n`).\
+dello studente (`s`/`n`).
 - Se ha meno di 26 anni **e** ha la tessera, stampare "Hai diritto allo
-sconto".\
+sconto".
 - Altrimenti stampare "Nessuno sconto disponibile".
 
 ### 🔹 4. UOperatore logico `||`
-Scrivi un programma che chieda un voto (da 1 a 10).\
+Scrivi un programma che chieda un voto (da 1 a 10).
 - Se il voto è **minore di 6** oppure **maggiore di 9**, stampa "Caso
-speciale".\
+speciale".
 - Altrimenti stampa "Voto normale".
 
 ### 🔹 5. Uso dell'operatore logico `!`
@@ -159,18 +175,18 @@ biglietto".\
 - Altrimenti stampa "Puoi entrare".
 
 ### 🔹 6. Accesso a un sito riservato
-Scrivi un programma che chieda all'utente:\
+Scrivi un programma che chieda all'utente:
 - l'età\
 - se ha un abbonamento (`s`/`n`)
 
 L'utente può accedere **solo se** ha almeno 18 anni **e** ha un
-abbonamento valido.\
+abbonamento valido.
 Altrimenti stampa un messaggio di accesso negato.
 
 ### 🔹 7. Promozione speciale
 Scrivi un programma che chieda all'utente il voto di un esame (da 1 a
-10).\
-Stampare "Complimenti, caso speciale" se:\
-- il voto è **minore di 6** (bocciato) **oppure**\
+10).
+Stampare "Complimenti, caso speciale" se:
+- il voto è **minore di 6** (bocciato) **oppure**
 - il voto è **maggiore di 9** (eccellente).
 Altrimenti stampare "Voto normale".
