@@ -30,6 +30,7 @@ printf("a %% b = %d\n", a % b);  // 1 (resto)
 ## 🔹 Operatori di confronto (relazionali)
 
 Confrontano due valori e restituiscono `0` (falso) o `1` (vero).
+Servono quindi per definire **condizioni** che assieme i costrutti di controllo del flusso permettono di creare programmi interattivi complessi.
 
 -   `==` uguale\
 -   `!=` diverso\
