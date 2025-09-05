@@ -141,7 +141,8 @@ Scrivi un programma che chieda la temperatura esterna (intero).
 ### 🔹 3.  Verifica di molteplicità
 Scrivi un programma che legga un numero intero e dica se è multiplo di 2, 3, 4, 5, 6 o 7.
 
-Esempi di esecuzione
+**Esempi di esecuzione**
+
 ```
 Inserisci un numero: 14
 14 è multiplo di 2
@@ -208,7 +209,8 @@ Scrivi un programma che calcoli il prezzo del biglietto per un visitatore del Lu
     * Torre panoramica
     Nel messaggio finale oltre al prezzo aggiungi anche il nome dell’attività scelta.
 
-Esempio di esecuzione:
+**Esempio di esecuzione:**
+
 ```
 	Quanti anni hai? 7
 	Scegli un'attività (g=giostra, c = casa stregata, t=torre panoramica): g
