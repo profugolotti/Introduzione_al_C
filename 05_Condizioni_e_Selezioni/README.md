@@ -69,6 +69,7 @@ eseguire.
 
 Si usa quando il verificarsi della condizione porta all'esecuzione di una o più istruzioni, 
 ma poi viene ripreso il flusso principale.
+Se la condizione è falsa, il blocco viene semplicemente saltato.
 
 ``` c
 if (condizione) {
