@@ -212,7 +212,7 @@ Scrivi un programma che calcoli il prezzo del biglietto per un visitatore del Lu
 **Esempio di esecuzione:**
 
 
-```bash
+```markdown
 	Quanti anni hai? 7
 	Scegli un'attività (g=giostra, c = casa stregata, t=torre panoramica): g
 	Hai diritto a uno sconto del 50%.
