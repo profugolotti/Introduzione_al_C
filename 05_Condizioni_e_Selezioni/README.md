@@ -195,7 +195,7 @@ Stampare "Complimenti, caso speciale" se:
 - il voto è **maggiore di 9** (eccellente).
 Altrimenti stampare "Voto normale".
 
-### 🔹 10. LunaPark.py
+### 🔹 10. LunaPark
 Scrivi un programma che calcoli il prezzo del biglietto per un visitatore del Luna Park, considerando età, tipo di attività scelta, ed eventuali sconti. Il prezzo di base è 10 euro per tutti.
 - Sconti in base all’età (selezione multipla):
     * Età < 10: 50% di sconto
