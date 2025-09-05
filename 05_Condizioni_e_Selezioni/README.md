@@ -60,7 +60,11 @@ Output atteso:
 Le **istruzioni di selezione** usano le condizioni per decidere cosa
 eseguire.
 
-### Condizione semplice
+### Selezione semplice (if)
+
+Si usa quando il verificarsi della condizione
+porta all'esecuzione di una o più istruzioni, ma
+poi viene ripreso il flusso principale
 
 ``` c
 if (condizione) {
@@ -68,7 +72,12 @@ if (condizione) {
 }
 ```
 
-### Condizione doppia
+
+### Selezione doppia (if - else)
+
+quando il flusso prevede due percorsi logicamente distinti: 
+- un blocco di codice viene eseguito al verificarsi della condizione
+- in tutti gli altri casi viene eseguito il secondo blocco di istruzioni
 
 ``` c
 if (condizione) {
@@ -85,6 +94,30 @@ if (eta >= 18) {
     printf("Sei maggiorenne.\n");
 } else {
     printf("Sei minorenne.\n");
+}
+```
+
+### Selezione multipla (if - else if - else)
+
+Quando il flusso prevede più percorsi alternativi, si usa la selezione multipla:
+- Ogni blocco if viene eseguito solo se la sua condizione è vera.
+- Se nessuna condizione è soddisfatta, può essere eseguito un blocco finale else (racchiude tutti i casi non previsti dalle condizioni precedenti).
+- Permette gestire più possibilità logicamente distinte senza annidare troppi if.
+
+
+**Esempio:**
+
+``` c
+int voto = 7;
+
+if (voto < 6) {
+    printf("Insufficiente\n");
+} else if (voto < 8) {
+    printf("Discreto\n");
+} else if (voto < 10) {
+    printf("Buono\n");
+} else {
+    printf("Eccellente\n");
 }
 ```
 
