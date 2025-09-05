@@ -67,9 +67,8 @@ eseguire.
 
 ### Selezione semplice (if)
 
-Si usa quando il verificarsi della condizione
-porta all'esecuzione di una o più istruzioni, ma
-poi viene ripreso il flusso principale
+Si usa quando il verificarsi della condizione porta all'esecuzione di una o più istruzioni, 
+ma poi viene ripreso il flusso principale.
 
 ``` c
 if (condizione) {
@@ -192,24 +191,24 @@ Inserisci un numero: 11
 11 non è multiplo di nessuno tra 2 e 7
 ```
 
-### 🔹 4. Operatore logico `&&`
+### 🔹 4. Operatore logico AND `&&`
 Scrivi un programma che chieda l'età e se lo studente ha la tessera
 dello studente (`s`/`n`).
 - Se ha meno di 26 anni **e** ha la tessera, stampare "Hai diritto allo
 sconto".
 - Altrimenti stampare "Nessuno sconto disponibile".
 
-### 🔹 5. Operatore logico `||`
+### 🔹 5. Operatore logico OR  `||`
 Scrivi un programma che chieda un voto (da 1 a 10).
 - Se il voto è **minore di 6** oppure **maggiore di 9**, stampa "Caso
 speciale".
 - Altrimenti stampa "Voto normale".
 
-### 🔹 6. Operatore logico `!`
+### 🔹 6. Operatore logico NOT `!`
 Scrivi un programma che chieda all'utente se possiede un abbonamento
-valido (`s`/`n`).\
-- Se **non** ha l'abbonamento (`!`), stampa "Devi acquistare un
-biglietto".\
+valido (`s`/`n`).
+- Se **non** ha l'abbonamento, stampa "Devi acquistare un
+biglietto".
 - Altrimenti stampa "Puoi entrare".
 
 ### 🔹 7. Verifica dell'input

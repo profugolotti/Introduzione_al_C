@@ -81,6 +81,8 @@ int main() {
     return 0;
 }
 ```
+👉 Come si nota per stampare l'esito di una condizione si usa `%d`: questo è in virtù
+del fatto che, in C, non esiste un tipo di dato apposta per i booleani, ma si ricorre agli interi.
 
 ------------------------------------------------------------------------
 
