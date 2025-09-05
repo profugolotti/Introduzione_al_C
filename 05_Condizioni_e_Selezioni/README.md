@@ -55,41 +55,6 @@ Output atteso:
 
 ------------------------------------------------------------------------
 
-## 🔹 Operatori logici
-
-Gli operatori logici permettono di combinare condizioni.
-
--   `&&` → AND logico (vero se **entrambe** le condizioni sono vere)
--   `||` → OR logico (vero se **almeno una** condizione è vera)
--   `!` → NOT logico (nega il risultato della condizione)
-
-### Esempi
-
-``` c
-(x < y) && (x == 5)   // vero se entrambe le condizioni sono vere
-(x > y) || (y == 10)  // vero se almeno una delle due è vera
-!(x == 5)             // vero se x non è uguale a 5
-```
-
-### Programma dimostrativo
-
-``` c
-#include <stdio.h>
-
-int main() {
-    int x = 5;
-    int y = 10;
-
-    printf("(x < y) && (x == 5)  --> %d\n", (x < y) && (x == 5));
-    printf("(x > y) || (y == 10) --> %d\n", (x > y) || (y == 10));
-    printf("!(x == 5)            --> %d\n", !(x == 5));
-
-    return 0;
-}
-```
-
-------------------------------------------------------------------------
-
 ## 🔹 Selezione (`if`, `else`)
 
 Le **istruzioni di selezione** usano le condizioni per decidere cosa

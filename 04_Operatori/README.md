@@ -50,30 +50,47 @@ printf("a == b -> %d\n", a == b); // 0 (falso)
 
 ## 🔹 Operatori logici
 
-Combinano condizioni booleane.
+Gli operatori logici permettono di combinare condizioni.
 
--   `&&` AND logico (vero se entrambe le condizioni sono vere)\
--   `||` OR logico (vero se almeno una condizione è vera)\
--   `!` NOT logico (nega la condizione)
+-   `&&` → AND logico (vero se **entrambe** le condizioni sono vere)
+-   `||` → OR logico (vero se **almeno una** condizione è vera)
+-   `!` → NOT logico (nega il risultato della condizione)
 
-**Esempio:**
+### Esempi
 
 ``` c
-int a = 7, b = 3;
-printf("(a > 5) && (b < 5) -> %d\n", (a > 5) && (b < 5)); // 1
-printf("(a < 5) || (b < 5) -> %d\n", (a < 5) || (b < 5)); // 1
+(x < y) && (x == 5)   // vero se entrambe le condizioni sono vere
+(x > y) || (y == 10)  // vero se almeno una delle due è vera
+!(x == 5)             // vero se x non è uguale a 5
+```
+
+### Programma dimostrativo
+
+``` c
+#include <stdio.h>
+
+int main() {
+    int x = 5;
+    int y = 10;
+
+    printf("(x < y) && (x == 5)  --> %d\n", (x < y) && (x == 5));
+    printf("(x > y) || (y == 10) --> %d\n", (x > y) || (y == 10));
+    printf("!(x == 5)            --> %d\n", !(x == 5));
+
+    return 0;
+}
 ```
 
 ------------------------------------------------------------------------
 
-## 🔹 Operatori di assegnazione (forma )
+## 🔹 Operatori di assegnazione e combinati
 
 Permettono di aggiornare il valore di una variabile.
 
--   `=` assegna\
--   `+=` somma e assegna\
--   `-=` sottrae e assegna\
--   `*=` moltiplica e assegna\
+-   `=` assegna
+-   `+=` somma e assegna
+-   `-=` sottrae e assegna
+-   `*=` moltiplica e assegna
 -   `/=` divide e assegna
 
 **Esempio:**
