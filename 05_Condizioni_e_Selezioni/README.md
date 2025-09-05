@@ -246,8 +246,7 @@ Scrivi un programma che calcoli il prezzo del biglietto per un visitatore del Lu
     * Torre panoramica
     Nel messaggio finale oltre al prezzo aggiungi anche il nome dell’attività scelta.
 
-**Esempio di esecuzione:**
-
+**Esempi di esecuzione**
 
 ```markdown
 	Quanti anni hai? 7
