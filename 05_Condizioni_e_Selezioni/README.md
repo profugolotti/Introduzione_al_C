@@ -125,40 +125,40 @@ if (eta >= 18) {
 
 ------------------------------------------------------------------------
 
-# Esercizi su condizioni e operatori logici in C
+## Esercizi su condizioni e operatori logici in C
 
 
-## 🔹 1. Condizioni semplici
+### 🔹 1. Condizioni semplici
 Scrivi un programma che chieda un numero all'utente e:\
 - stampi "pari" se il numero è divisibile per 2,\
 - altrimenti stampi "dispari".
 
-## 🔹 2. Condizione doppia
+### 🔹 2. Condizione doppia
 Scrivi un programma che chieda la temperatura esterna (intero).\
 - Se è maggiore o uguale a 30 stampa "Fa caldo".\
 - Altrimenti stampa "Non fa caldo".
 
-## 🔹 3. Operatore logico `&&`
+### 🔹 3. Operatore logico `&&`
 Scrivi un programma che chieda l'età e se lo studente ha la tessera
 dello studente (`s`/`n`).\
 - Se ha meno di 26 anni **e** ha la tessera, stampare "Hai diritto allo
 sconto".\
 - Altrimenti stampare "Nessuno sconto disponibile".
 
-## 🔹 4. UOperatore logico `||`
+### 🔹 4. UOperatore logico `||`
 Scrivi un programma che chieda un voto (da 1 a 10).\
 - Se il voto è **minore di 6** oppure **maggiore di 9**, stampa "Caso
 speciale".\
 - Altrimenti stampa "Voto normale".
 
-## 🔹 5. Uso dell'operatore logico `!`
+### 🔹 5. Uso dell'operatore logico `!`
 Scrivi un programma che chieda all'utente se possiede un abbonamento
 valido (`s`/`n`).\
 - Se **non** ha l'abbonamento (`!`), stampa "Devi acquistare un
 biglietto".\
 - Altrimenti stampa "Puoi entrare".
 
-## 🔹 6. Accesso a un sito riservato
+### 🔹 6. Accesso a un sito riservato
 Scrivi un programma che chieda all'utente:\
 - l'età\
 - se ha un abbonamento (`s`/`n`)
@@ -167,7 +167,7 @@ L'utente può accedere **solo se** ha almeno 18 anni **e** ha un
 abbonamento valido.\
 Altrimenti stampa un messaggio di accesso negato.
 
-## 🔹 7. Promozione speciale
+### 🔹 7. Promozione speciale
 Scrivi un programma che chieda all'utente il voto di un esame (da 1 a
 10).\
 Stampare "Complimenti, caso speciale" se:\
