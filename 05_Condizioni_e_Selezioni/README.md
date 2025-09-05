@@ -12,8 +12,13 @@ booleane), degli **operatori logici** e delle istruzioni di
 
 Una **condizione** è un'espressione che può assumere solo due valori:
 **vero (true)** o **falso (false)**.\
-In C, `true` corrisponde a un valore diverso da 0, mentre `false`
-corrisponde a 0.
+In C, `true` corrisponde a un valore diverso da 0 (spesso 1), mentre `false`
+corrisponde a `0`.
+
+💡 Ricorda: in C
+- `false` → 0
+- `true`  → non zero
+
 
 ### Esempi di condizioni
 
