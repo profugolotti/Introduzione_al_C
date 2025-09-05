@@ -142,7 +142,7 @@ Scrivi un programma che chieda la temperatura esterna (intero).
 Scrivi un programma che legga un numero intero e dica se è multiplo di 2, 3, 4, 5, 6 o 7.
 
 Esempi di esecuzione
-``` c
+```
 Inserisci un numero: 14
 14 è multiplo di 2
 14 è multiplo di 7
@@ -154,39 +154,64 @@ Inserisci un numero: 11
 11 non è multiplo di nessuno tra 2 e 7
 ```
 
-### 🔹 3. Operatore logico `&&`
+### 🔹 4. Operatore logico `&&`
 Scrivi un programma che chieda l'età e se lo studente ha la tessera
 dello studente (`s`/`n`).
 - Se ha meno di 26 anni **e** ha la tessera, stampare "Hai diritto allo
 sconto".
 - Altrimenti stampare "Nessuno sconto disponibile".
 
-### 🔹 4. UOperatore logico `||`
+### 🔹 5. Operatore logico `||`
 Scrivi un programma che chieda un voto (da 1 a 10).
 - Se il voto è **minore di 6** oppure **maggiore di 9**, stampa "Caso
 speciale".
 - Altrimenti stampa "Voto normale".
 
-### 🔹 5. Uso dell'operatore logico `!`
+### 🔹 6. Operatore logico `!`
 Scrivi un programma che chieda all'utente se possiede un abbonamento
 valido (`s`/`n`).\
 - Se **non** ha l'abbonamento (`!`), stampa "Devi acquistare un
 biglietto".\
 - Altrimenti stampa "Puoi entrare".
 
-### 🔹 6. Accesso a un sito riservato
+### 🔹 7. Verifica dell'input
+Scrivi un programma che chieda all'utente la lunghezza del lato di un cubo;
+stampa a schermo superficie e volume solo se tale lunghezza è positiva.
+
+### 🔹 8. Accesso a un sito riservato
 Scrivi un programma che chieda all'utente:
-- l'età\
+- l'età
 - se ha un abbonamento (`s`/`n`)
 
 L'utente può accedere **solo se** ha almeno 18 anni **e** ha un
 abbonamento valido.
 Altrimenti stampa un messaggio di accesso negato.
 
-### 🔹 7. Promozione speciale
+### 🔹 9. Promozione speciale
 Scrivi un programma che chieda all'utente il voto di un esame (da 1 a
 10).
 Stampare "Complimenti, caso speciale" se:
 - il voto è **minore di 6** (bocciato) **oppure**
 - il voto è **maggiore di 9** (eccellente).
 Altrimenti stampare "Voto normale".
+
+### 🔹 10. LunaPark.py
+Scrivi un programma che calcoli il prezzo del biglietto per un visitatore del Luna Park, considerando età, tipo di attività scelta, ed eventuali sconti. Il prezzo di base è 10 euro per tutti.
+- Sconti in base all’età (selezione multipla):
+    * Età < 10: 50% di sconto
+    * Età tra 10 e 17: 30% di sconto
+    * Età >= 65: 40% di sconto
+    * Tutti gli altri: nessuno sconto
+- Attività speciale: Ogni visitatore sceglie un’attività:
+    * Giostra
+    * Casa stregata
+    * Torre panoramica
+    Nel messaggio finale oltre al prezzo aggiungi anche il nome dell’attività scelta.
+
+Esempio di esecuzione:
+```
+	Quanti anni hai? 7
+	Scegli un'attività (g=giostra, c = casa stregata, t=torre panoramica): g
+	Hai diritto a uno sconto del 50%.
+	Il tuo biglietto comprensivo del giro **giostra** costa: 7.00 euro
+```
