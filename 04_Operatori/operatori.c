@@ -32,9 +32,9 @@ int main() {
     printf("(a < 5) || (b < 5) -> %d\n", (a < 5) || (b < 5));
     printf("!(a == 7)          -> %d\n\n", !(a == 7));
 
-    // -------------------------
-    // Operatori di assegnazione
-    // -------------------------
+    // -----------------------------------------
+    // Operatore di assegnazione e composti
+    // -----------------------------------------
     printf("Operatori di assegnazione:\n");
     int c = a;      // copia di a
     printf("c = %d\n", c);

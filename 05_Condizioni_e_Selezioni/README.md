@@ -124,6 +124,40 @@ if (eta >= 18) {
 ```
 
 ------------------------------------------------------------------------
+## Errori tipici
+
+### 3. Uso errato di = al posto di ==
+``` c
+int n = 5;
+if (n = 3) {   // ❌ assegna 3 a n, non confronta
+    printf("Condizione vera\n"); // verrà sempre eseguito (perché 3 è vero)
+}
+```
+
+✅ Corretto:
+``` c
+if (n == 3) {
+    printf("n è uguale a 3\n");
+}
+```
+
+### 4. Dimenticare le parentesi con condizioni complesse
+``` c
+int a = 5, b = 10;
+if (a < 10 && b > 2 || a == 5) { ... }
+```
+
+👉 Gli operatori logici hanno priorità diverse (&& ha precedenza su ||).
+Lo studente potrebbe credere che venga valutato in ordine da sinistra a destra.
+
+✅ Corretto:
+``` c
+if ((a < 10 && b > 2) || (a == 5)) { ... }
+```
+...le parentesi rendono esplicito l'ordine in cui vogliamo che vengano valutati gli operatori
+
+---------------------------------------------------------------------- 
+
 
 ## Esercizi su condizioni e operatori logici in C
 
