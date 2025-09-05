@@ -129,8 +129,8 @@ if (eta >= 18) {
 
 
 ### 🔹 1. Condizioni semplici
-Scrivi un programma che chieda un numero all'utente e:\
-- stampi "pari" se il numero è divisibile per 2,\
+Scrivi un programma che chieda un numero all'utente e:
+- stampi "pari" se il numero è divisibile per 2,
 - altrimenti stampi "dispari".
 
 ### 🔹 2. Condizione doppia
