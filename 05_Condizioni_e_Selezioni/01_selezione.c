@@ -27,11 +27,9 @@ int main() {
         printf("Questo non verrà mai stampato.\n");
     }
 
-    if(6){ // e qualsiasi altro valore come VERO
+    if(1){ // e qualsiasi altro valore come VERO
         printf("Questo verrà sempre stampato.\n");
     }
-
-
 
 
     // Secondo esempio: uso dell'operatore logico AND (&&)

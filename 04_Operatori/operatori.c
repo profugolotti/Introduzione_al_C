@@ -6,6 +6,7 @@ int main() {
     // -------------------------
     // Operatori aritmetici
     // -------------------------
+
     printf("Operatori aritmetici:\n");
     printf("a + b = %d\n", a + b);
     printf("a - b = %d\n", a - b);
@@ -14,11 +15,11 @@ int main() {
     printf("a %% b = %d (resto)\n\n", a % b);
 
     // -------------------------
-    // Operatori di confronto
+    // Operatori di confronto (booleani)
     // -------------------------
     printf("Operatori di confronto:\n");
-    printf("a == b -> %d\n", a == b);
-    printf("a != b -> %d\n", a != b);
+    printf("a == b -> %d\n", a == b);  //Attenta! 1 solo '=' è un operatore di assegnazione
+    printf("a != b -> %d\n", a != b);  
     printf("a > b  -> %d\n", a > b);
     printf("a < b  -> %d\n", a < b);
     printf("a >= b -> %d\n", a >= b);
@@ -40,7 +41,7 @@ int main() {
     printf("c = %d\n", c);
     c += b;         // equivalente a c = c + b
     printf("c += b -> %d\n", c);
-    c *= 2;         // equivalente a c = c * 2
+    c *= 2;         // equivalente a c = c * 2 
     printf("c *= 2 -> %d\n", c);
     c -= 4;         // equivalente a c = c - 4
     printf("c -= 4 -> %d\n", c);
