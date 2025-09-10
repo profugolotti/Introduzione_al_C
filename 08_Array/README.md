@@ -5,25 +5,40 @@
 Un **vettore** (array) è una struttura dati che consente di memorizzare
 più valori dello **stesso tipo** all'interno di un'unica variabile.
 
-Tecnicamente permette definire una struttura dati di N elementi
-**contigui in memoria** e **uniformi**.
-
-Il vettore è composto di **elementi** (ognuno equivale ad una
-variabile); ogni elemento ha un **valore** (il dato che contiene) ed un
-**indice** (la posizione rispetto alla testa del vettore).
-
-In C, i vettori hanno **dimensione fissa** che deve essere indicata al
-momento della dichiarazione (array statici). Il numero tra quadre deve
-essere una **costante** (definita con `const` o `#define`).
+* Tecnicamente permette definire una struttura dati di N elementi
+**contigui in memoria** (uno di seguito all'altro) e **omogenei**(stesso tipo).
 
 Esempio:
 
 ``` c
-int v[10]; // vettore di 10 interi
+int v[5]; // dichiarazione di un vettore di 5 interi
+```
+```
+Rappressentazione di un vettore di 5 elementi contigui in memoria:
+
+    +-----+-----+-----+-----+-----+
+    |  10 |  20 |  30 |  40 |  50 |   <-- valori (dati contenuti)
+    +-----+-----+-----+-----+-----+
+       ^     ^     ^     ^     ^
+       |     |     |     |     |
+      v[0]  v[1]  v[2]  v[3]  v[4]   <-- indici (posizioni)
+
+    - Gli elementi sono omogenei (tutti int, in questo caso).
+    - Gli elementi sono contigui (uno dopo l'altro in memoria).
+    - Ogni elemento ha:
+        • un indice (da 0 a 4)
+        • un valore (l'intero contenuto)
 ```
 
-Gli **indici** partono sempre da **0** e arrivano a `dimensione - 1`.
-Nel caso precedente, da `0` a `9`.
+* Le 'celle' di un vettore sono dette  **elementi** (ognuno equivale ad una
+variabile); 
+* ogni elemento ha un **valore** (il dato che contiene) ed un **indice** (la posizione rispetto alla testa del vettore).
+
+* Gli **indici** partono sempre da **0** e arrivano a `dimensione - 1`.
+
+* In C, i vettori hanno **dimensione fissa** che deve essere indicata al
+momento della dichiarazione (array statici): possiamo quindi mettere un numero tra quadre,
+oppure un identificativo che però deve essere una **costante** (definita con `const` o `#define`).
 
 ------------------------------------------------------------------------
 
@@ -38,7 +53,18 @@ int v3[10] = {0,1,2};    // i primi 3 elementi inizializzati, gli altri messi a 
 int v4[10] = {0};        // tutti gli elementi inizializzati a 0
 int v5[];                // ⚠️Errore! la dimensione non può essere omessa se non si inizializza
 ```
+> ⚠️ In C la dimensione deve essere **nota a compilazione** (non può essere una variabile).
 
+Esempio:
+``` c
+
+#define DIM 100
+int size = 20; 
+const int N = 10;
+int a[DIM]; // corretto
+int b[size]; // ⚠️Errore! size non è una costante
+int c[N]; // corretto
+```
 ------------------------------------------------------------------------
 
 ## Accesso agli elementi
@@ -101,13 +127,52 @@ Output esempio:
 
 ------------------------------------------------------------------------
 
-## In sintesi
+## Errori tipici con gli array
 
--   I vettori permettono di gestire più valori dello stesso tipo in modo
-    ordinato.
--   Si accede agli elementi tramite indici numerici.
--   Spesso si usano i cicli `for` per operazioni di input/output o
-    trasformazioni.
+1.  **Indice fuori dai limiti**
+
+    ``` c
+    int v[5];
+    v[5] = 10; // ERRORE: l’ultimo indice valido è 4
+    ```
+
+    → Accesso a memoria non valida, comportamento **indefinito**.
+
+2.  **Uso di una variabile come dimensione dell'array**
+
+    ``` c
+    int n;
+    scanf("%d", &n);
+    int v[n]; // ERRORE in C89/C90: la dimensione deve essere una costante
+    ```
+
+    → In C "classico" la dimensione deve essere **nota a compilazione**
+    (es. `#define DIM 10`).\
+    Alcuni compilatori supportano i **VLA (Variable Length Array)**, ma
+    non è portabile.\
+    Per array con dimensione decisa a runtime si usano funzioni di
+    **allocazione dinamica** (`malloc`, `calloc`).
+
+3.  **Gestione errata dell'ultimo elemento nei cicli**
+
+    ``` c
+    #define DIM 5
+    int v[DIM] = {1,2,3,4,5};
+
+    for(int i=0; i<=DIM; i++){   // ERRORE: si accede a v[5]
+        printf("%d ", v[i]);
+    }
+    ```
+
+    → Il ciclo corretto è:
+
+    ``` c
+    for(int i=0; i<DIM; i++){   // CORRETTO: da 0 a 4
+        printf("%d ", v[i]);
+    }
+    ```
+
+    L'errore sta nel confondere `<=` con `<`.
 
 ------------------------------------------------------------------------
 
