@@ -82,7 +82,7 @@ int main() {
 
 -   I cicli possono essere **annidati** (un ciclo dentro un altro).
     
-    ** Esempio di cicli annidati: tabellina dei numeri da 1 a 5.**
+    **Esempio di cicli annidati: tabellina dei numeri da 1 a 5**
 
     ``` c
     #include <stdio.h>
@@ -97,7 +97,7 @@ int main() {
         return 0;
     }
     ```
-    ** Output previsto **
+    **Output previsto**
     ```
         1   2   3   4   5
         2   4   6   8  10
@@ -111,7 +111,7 @@ int main() {
     -   `break` → esce immediatamente dal ciclo
     -   `continue` → salta all'iterazione successiva
 
-    ** Esempio con `continue` e `break`: **
+    **Esempio con `continue` e `break`:**
 
     ``` c
     #include <stdio.h>
@@ -125,7 +125,7 @@ int main() {
         return 0;
     }
     ```
-    ** Output previsto **
+    **Output previsto**
     ```
         0
         1
