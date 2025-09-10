@@ -81,6 +81,30 @@ int main() {
 ## Osservazioni generali
 
 -   I cicli possono essere **annidati** (un ciclo dentro un altro).
+    
+    ## Esempi di cicli annidati: tabellina dei numeri da 1 a 5.
+
+    ``` c
+    #include <stdio.h>
+
+    int main() {
+        for (int i = 1; i <= 5; i++) {        // ciclo esterno: riga
+            for (int j = 1; j <= 5; j++) {    // ciclo interno: colonna
+                printf("%4d", i * j);         // prodotto riga * colonna
+            }
+            printf("\n"); // a capo dopo ogni riga
+        }
+        return 0;
+    }
+    ```
+    ### Output previsto 
+
+        1   2   3   4   5
+        2   4   6   8  10
+        3   6   9  12  15
+        4   8  12  16  20
+        5  10  15  20  25
+
 -   Si può dimostrare che i tre tipi di cicli sono **equivalenti** in termini di funzionalità:
     ogni ciclo `for` può essere riscritto come un `while` e viceversa (Teorema di Böhm-Jacopini).
 -   È possibile interrompere o saltare una iterazione usando:
