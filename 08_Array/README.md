@@ -143,15 +143,11 @@ Output esempio:
     ``` c
     int n;
     scanf("%d", &n);
-    int v[n]; // ERRORE in C89/C90: la dimensione deve essere una costante
+    int v[n]; // ERRORE! la dimensione deve essere una costante definita a compilazione
     ```
 
-    → In C "classico" la dimensione deve essere **nota a compilazione**
-    (es. `#define DIM 10`).\
-    Alcuni compilatori supportano i **VLA (Variable Length Array)**, ma
-    non è portabile.\
-    Per array con dimensione decisa a runtime si usano funzioni di
-    **allocazione dinamica** (`malloc`, `calloc`).
+    → In C "classico" la dimensione deve essere nota a **compile-time**
+    (es. `#define DIM 10`). Per array con dimensione decisa a **run-time** si parla di array dinamici (in quanto la loro dimensione può cambiare durante l'esecuzione) e possono essere allocati usando funzioni di **allocazione dinamica** (`malloc`, `calloc`).
 
 3.  **Gestione errata dell'ultimo elemento nei cicli**
 
@@ -159,7 +155,7 @@ Output esempio:
     #define DIM 5
     int v[DIM] = {1,2,3,4,5};
 
-    for(int i=0; i<=DIM; i++){   // ERRORE: si accede a v[5]
+    for(int i=0; i<=DIM; i++){   // ERRORE: si accede a v[5] che non esiste
         printf("%d ", v[i]);
     }
     ```
