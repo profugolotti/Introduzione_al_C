@@ -104,7 +104,7 @@ int main() {
 
 ------------------------------------------------------------------------
 
-## Traccia per esercizi
+## Esercizi sui cicli in C
 Nel seguito per N si intende un numero inserito da tastiera.
 1.  Stampare i numeri da 1 a N con un ciclo.
 2.  Calcolare la somma dei primi N numeri naturali .
