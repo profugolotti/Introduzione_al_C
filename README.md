@@ -28,13 +28,13 @@ Ogni cartella contiene un file README con l'introduzione teorica essenziale dell
   Spiegazioni passo passo ed esercizi pratici. [https://www.geeksforgeeks.org/c-programming-language](https://www.geeksforgeeks.org/c-programming-language)
 
 - **cplusplus.com (sezione C)**  
-  Consultazione rapida delle funzioni standard delle libreri C con esempi pratici. [https://cplusplus.com/reference/clibrary](https://cplusplus.com/reference/clibrary)
+  Consultazione rapida delle funzioni standard delle libreria C con esempi pratici. [https://cplusplus.com/reference/clibrary](https://cplusplus.com/reference/clibrary)
 
 ---
 
-## 🛠️ Strumenti consigliati
+## 🛠️ Strumenti di sviluppo
 
-- **Compilatore/IDE semplice per Windows**  
+- **Compilatore/IDE per Windows**  
   - Dev-C++  
   - Code::Blocks  
   - Visual Studio Code
