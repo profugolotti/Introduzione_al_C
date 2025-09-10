@@ -82,7 +82,7 @@ int main() {
 
 -   I cicli possono essere **annidati** (un ciclo dentro un altro).
     
-    ## Esempi di cicli annidati: tabellina dei numeri da 1 a 5.
+    ### Esempi di cicli annidati: tabellina dei numeri da 1 a 5.
 
     ``` c
     #include <stdio.h>
@@ -111,29 +111,29 @@ int main() {
     -   `break` → esce immediatamente dal ciclo
     -   `continue` → salta all'iterazione successiva
 
-**Esempio con `continue` e `break`:**
+    ### Esempio con `continue` e `break`:
 
-``` c
-#include <stdio.h>
+    ``` c
+    #include <stdio.h>
 
-int main() {
-    for (int i = 0; i < 10; i++) {
-        if (i == 3) continue;   // salta il 3
-        if (i == 7) break;      // interrompe il ciclo
-        printf("i = %d\n", i);
+    int main() {
+        for (int i = 0; i < 10; i++) {
+            if (i == 3) continue;   // salta il 3
+            if (i == 7) break;      // interrompe il ciclo
+            printf("i = %d\n", i);
+        }
+        return 0;
     }
-    return 0;
-}
-```
-### Output previsto 
-```
-    0
-    1
-    2
-    4
-    5
-    6
-```
+    ```
+    ### Output previsto 
+    ```
+        0
+        1
+        2
+        4
+        5
+        6
+    ```
 ------------------------------------------------------------------------
 
 ## Esercizi sui cicli in C
