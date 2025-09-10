@@ -98,13 +98,13 @@ int main() {
     }
     ```
     ### Output previsto 
-
+    ```
         1   2   3   4   5
         2   4   6   8  10
         3   6   9  12  15
         4   8  12  16  20
         5  10  15  20  25
-
+    ```
 -   Si può dimostrare che i tre tipi di cicli sono **equivalenti** in termini di funzionalità:
     ogni ciclo `for` può essere riscritto come un `while` e viceversa (Teorema di Böhm-Jacopini).
 -   È possibile interrompere o saltare una iterazione usando:
@@ -125,7 +125,16 @@ int main() {
     return 0;
 }
 ```
-
+### Output previsto 
+    ```
+        0
+        1
+        2
+        4
+        5
+        6
+        
+    ```
 ------------------------------------------------------------------------
 
 ## Esercizi sui cicli in C
