@@ -10,7 +10,7 @@ int main(){
 
     //Dichiarazione variabili
     int n;
-    //int i = 0;
+    //int i = 0; //contatore per il ciclo
     
     //Input dei dati
     printf("Inserisci un numero: ");
@@ -21,6 +21,14 @@ int main(){
         printf("Ciao!\n");
         n--;
     }
+
+    /* versione con contatore: usa una variabile in più
+    while (i < n){
+        printf("Ciao!\n");
+        i++;
+    }   
+       
+    */
 
     return 0;
 }
