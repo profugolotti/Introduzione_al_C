@@ -4,6 +4,7 @@
 - Se la condizione è falsa sin dall'inizio, il ciclo non viene eseguito neanche una volta.
 
 **Esempio:**
+
 ```c
 #include <stdio.h>
 

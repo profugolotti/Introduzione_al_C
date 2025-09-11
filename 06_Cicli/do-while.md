@@ -1,7 +1,7 @@
 # Ciclo `do...while`
 
 - La condizione viene verificata **dopo** l'esecuzione del blocco.
-- Viene eseguito almeno una volta.
+- Viene eseguito **almeno una volta**.
 
 **Esempio:**
 
